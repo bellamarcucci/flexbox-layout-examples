@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+
+.pageLayout{
+    font-family: Arial, sans-serif, Helvetica;
+    color: #222;
+    line-height: 1.5;
+}
+
+.parentBox{
+
+    width: 100%;
+    font-family: Arial, sans-serif, Helvetica;
+    color: #222;
+    line-height: 1.5;
+}
+
+main{
+    background-color: #4f4f4f;
+    padding: 20px;
+    color: white;
+    gap: 20px;
+    text-align: justify;
+    font-size: small;
+    padding-top: 100px;
+    
+}
+
+
+main h1{
+    background-color: #1F1F1F;
+    color: white;
+    border-radius: 4px; 
+    padding-block: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
+.mainServices{
+    color: white;
+    padding-top: 100px;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 20px;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    background-color: #444;
+    padding: 20px;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.mainAbout{
+    display: flex;
+    flex-direction: row;
+    background-color: #444;
+    padding: 20px;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.aboutAside{
+    display: flex;
+    flex-direction: column;
+    background-color: #151515;
+    padding: 20px;
+    gap: 20px;
+}
+
+.aboutContent{
+    padding-left: 20px;
+}
+
+
+.serviceImgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-height: 200px;
+    gap: 20px;
+}
+
+#yardImg{
+    object-fit: cover;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+#flowerImg{
+    object-fit: cover;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+header{
+    position: fixed;
+    min-width: 100vw;
+    height: 50px;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 32px;
+    min-height: 50px;
+    background-color: #1F1F1F;
+}
+
+nav img {
+    height: 50px;
+    background-color: #444;
+    border-radius: 50%;
+    width: 50px;
+    padding: 2px;
+}
+
+#gardeningImg{
+    float: left;
+    max-width: 400px;
+    margin-right: 20px;
+    border-radius: 4px;
+    max-height: fit-content;
+}
+
+#tree-img{
+    float: right;
+    max-width: 400px;
+    margin-left: 20px;
+    border-radius: 4px;
+    max-height: fit-content;
+}
+
+.gardeningSection{
+    background-color: #444;
+    padding: 20px;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    
+}
+
+#landscapingImg{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin-block: 20px;
+    border-radius: 4px;
+}
+
+.landscapingSection{
+    background-color: #444;
+    padding: 20px;
+    color: white;
+    border-radius: 4px;
+    
+}
+
+.weedRemoveSection{
+    margin-block: 20px;
+    background-color: #444;
+    border-radius: 4px;
+    padding: 20px;
+
+}
+
+.spacer {
+    display: inline-block;
+    /*Parent width - Logo width - menu <ul> width with no margin in the last child*/
+    width: calc(100% - 50px - 250px);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    vertical-align: bottom;
+}
+
+nav ul li {
+    font-size: small;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: white;
+}
+
+nav ul li a.currant {
+    color: aqua;
+    font-weight: bold
+}
+
+nav ul li a:hover{
+    color: orange;
+}
+
+nav ul li a:active{
+    color: green;
+}
+
+#services{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: small;
+    text-align: justify;
+}
+#gardening{
+    text-align: left;
+    margin-block: 20px;
+
+}
+
+#landscaping{
+    text-align: left;
+    margin-block: 20px;
+    
+}
+
+#weedControl{
+    text-align: left;
+    margin-block: 20px;
+    
+}
+
+#treeRemoval{
+    text-align: left;
+    margin-block: 20px;
+    
+}
+
+
+
+.footer{
+    display: flex;
+    height: 80px;
+    margin-bottom: 0px;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-navigation{
+    display: flex;
+
+    
+}
+
+.copyFooter{
+    display: flex;
+    font-size: 10px;
+    justify-content: flex-end;
+    height: 10px;
+    padding-top: 10px;
+}
+
+
+/* Services dropdown menu */
+
+#services-li{
+    position: relative;
+}
+
+#services-li:hover #services-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+
+}
+
+#services-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #1F1F1F;
+    position: absolute;
+    top: 105%;
+    left: 0px;
+    margin-bottom: 0px;
+    padding: 4px 16px;
+    z-index: 1;
+    transform: translateY(-2vh);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, transform 0.15s;
+    border-radius: 4px;
+    gap: 15px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    
+}
+
+
+#services-menu li{
+    margin-right: 0px;
+}
+
+#services-menu a{
+    white-space: nowrap;
+    display: inline-block;
+}
+
+
+/*BACK TO TOP BUTTON*/
+
+.back-to-top{
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    align-items: center;
+    justify-content: center;    
+    text-decoration: none;
+
+    
+    
+}
+
+.back-to-top span{
+    color: white;
+    font-size: 50px;
+    background-color: #1F1F1F;
+    border-radius: 50px;
+}
+
+
